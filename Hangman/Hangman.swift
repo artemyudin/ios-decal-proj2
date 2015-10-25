@@ -64,7 +64,7 @@ class Hangman {
         for (var i = 0; i < guessedLetters!.count; i += 1) {
             let curr = guessedLetters![i]
             if (result == nil) {
-                result = String(curr)
+                result = "Guessed: \(curr)"
             } else {
                 result = result + ", \(curr)"
             }

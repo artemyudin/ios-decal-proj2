@@ -40,7 +40,7 @@ class HangmanViewController: UIViewController {
                     knownString.text = api.knownString
                     if (!api.knownString!.containsString("_")) {
                         done = true
-                        showAlert("WON")
+                        showAlert(true)
                         print("YOU WON")
                         return
                     }
@@ -49,7 +49,7 @@ class HangmanViewController: UIViewController {
                     image.image = UIImage(named: "hangman\(stage).gif")
                     if (stage == 7) {
                         done = true
-                        showAlert("LOST")
+                        showAlert(false)
                         print("YOU LOST")
                         return
                     }
@@ -68,6 +68,7 @@ class HangmanViewController: UIViewController {
         api.start()
         knownString.text = api.knownString
         print("Secret word: \(api.answer)")
+        guessTextField.becomeFirstResponder()
         
     }
     
@@ -83,14 +84,21 @@ class HangmanViewController: UIViewController {
     }
     
     
-    func showAlert(state: String) {
+    func showAlert(won: Bool) {
+        var title = "Sorry brah ;("
+        var mesg = "LOST"
+        if (won) {
+            title = "Congratulations!"
+            mesg = "WON"
+        }
+        
         //Create the AlertController
-        let actionSheetController: UIAlertController = UIAlertController(title: "Alert", message: "Hey, you just \(state)", preferredStyle: .Alert)
+        let actionSheetController: UIAlertController = UIAlertController(title: title, message: "Hey, you just \(mesg) the game", preferredStyle: .Alert)
         
         //Create and an option action
-        let nextAction: UIAlertAction = UIAlertAction(title: "Ok", style: .Default) { action -> Void in
+        let OK: UIAlertAction = UIAlertAction(title: "Ok", style: .Default) { action -> Void in
         }
-        actionSheetController.addAction(nextAction)
+        actionSheetController.addAction(OK)
         
         //Present the AlertController
         self.presentViewController(actionSheetController, animated: true, completion: nil)
