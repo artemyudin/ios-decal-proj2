@@ -46,7 +46,7 @@ class Hangman {
         var chars = Array(answer!.characters)
         
         for (var i = 0; i < answer!.characters.count; i += 1) {
-            if String(chars[i]) == letter {
+            if String(chars[i]).lowercaseString == letter {
                 isCorrect = true
                 knownString = "\((knownString! as NSString).substringToIndex(i))" + "\(letter)"
                             + "\((knownString! as NSString).substringFromIndex(i+1))"
@@ -62,7 +62,12 @@ class Hangman {
         }
         var result: String!
         for (var i = 0; i < guessedLetters!.count; i += 1) {
-            result = result + ", \(guessedLetters?.objectAtIndex(i))"
+            let curr = guessedLetters![i]
+            if (result == nil) {
+                result = String(curr)
+            } else {
+                result = result + ", \(curr)"
+            }
         }
         return result
     }

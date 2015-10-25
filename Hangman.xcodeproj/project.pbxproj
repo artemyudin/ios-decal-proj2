@@ -7,17 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2817EBD41BDC579400545863 /* hangman1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2817EBCD1BDC575900545863 /* hangman1.gif */; };
+		2817EBD51BDC579400545863 /* hangman2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2817EBCE1BDC575900545863 /* hangman2.gif */; };
+		2817EBD61BDC579400545863 /* hangman3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2817EBCF1BDC575900545863 /* hangman3.gif */; };
+		2817EBD71BDC579400545863 /* hangman4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2817EBD01BDC575900545863 /* hangman4.gif */; };
+		2817EBD81BDC579400545863 /* hangman5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2817EBD11BDC575900545863 /* hangman5.gif */; };
+		2817EBD91BDC579400545863 /* hangman6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2817EBD21BDC575900545863 /* hangman6.gif */; };
+		2817EBDA1BDC579400545863 /* hangman7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2817EBD31BDC575900545863 /* hangman7.gif */; };
 		3A2BBF5A1BCDDAC200B23285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BBF591BCDDAC200B23285 /* AppDelegate.swift */; };
 		3A2BBF5C1BCDDAC200B23285 /* HangmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BBF5B1BCDDAC200B23285 /* HangmanViewController.swift */; };
 		3A2BBF5F1BCDDAC200B23285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF5D1BCDDAC200B23285 /* Main.storyboard */; };
 		3A2BBF611BCDDAC200B23285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF601BCDDAC200B23285 /* Assets.xcassets */; };
 		3A2BBF641BCDDAC200B23285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF621BCDDAC200B23285 /* LaunchScreen.storyboard */; };
-		3A2BBF6D1BCDDDA900B23285 /* HangmanPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BBF6C1BCDDDA900B23285 /* HangmanPhrase.swift */; settings = {ASSET_TAGS = (); }; };
-		3A2BBF6F1BCDDEBB00B23285 /* phrases.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF6E1BCDDEBB00B23285 /* phrases.plist */; settings = {ASSET_TAGS = (); }; };
-		3A2BBF731BCDE37800B23285 /* Hangman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BBF721BCDE37800B23285 /* Hangman.swift */; settings = {ASSET_TAGS = (); }; };
+		3A2BBF6D1BCDDDA900B23285 /* HangmanPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BBF6C1BCDDDA900B23285 /* HangmanPhrase.swift */; };
+		3A2BBF6F1BCDDEBB00B23285 /* phrases.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2BBF6E1BCDDEBB00B23285 /* phrases.plist */; };
+		3A2BBF731BCDE37800B23285 /* Hangman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BBF721BCDE37800B23285 /* Hangman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2817EBCD1BDC575900545863 /* hangman1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hangman1.gif; sourceTree = "<group>"; };
+		2817EBCE1BDC575900545863 /* hangman2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hangman2.gif; sourceTree = "<group>"; };
+		2817EBCF1BDC575900545863 /* hangman3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hangman3.gif; sourceTree = "<group>"; };
+		2817EBD01BDC575900545863 /* hangman4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hangman4.gif; sourceTree = "<group>"; };
+		2817EBD11BDC575900545863 /* hangman5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hangman5.gif; sourceTree = "<group>"; };
+		2817EBD21BDC575900545863 /* hangman6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hangman6.gif; sourceTree = "<group>"; };
+		2817EBD31BDC575900545863 /* hangman7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hangman7.gif; sourceTree = "<group>"; };
 		3A2BBF561BCDDAC200B23285 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2BBF591BCDDAC200B23285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A2BBF5B1BCDDAC200B23285 /* HangmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanViewController.swift; sourceTree = "<group>"; };
@@ -41,9 +55,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2817EBCC1BDC575900545863 /* basic-hangman-img */ = {
+			isa = PBXGroup;
+			children = (
+				2817EBCD1BDC575900545863 /* hangman1.gif */,
+				2817EBCE1BDC575900545863 /* hangman2.gif */,
+				2817EBCF1BDC575900545863 /* hangman3.gif */,
+				2817EBD01BDC575900545863 /* hangman4.gif */,
+				2817EBD11BDC575900545863 /* hangman5.gif */,
+				2817EBD21BDC575900545863 /* hangman6.gif */,
+				2817EBD31BDC575900545863 /* hangman7.gif */,
+			);
+			name = "basic-hangman-img";
+			path = "Hangman/basic-hangman-img";
+			sourceTree = "<group>";
+		};
 		3A2BBF4D1BCDDAC200B23285 = {
 			isa = PBXGroup;
 			children = (
+				2817EBCC1BDC575900545863 /* basic-hangman-img */,
 				3A2BBF581BCDDAC200B23285 /* Hangman */,
 				3A2BBF571BCDDAC200B23285 /* Products */,
 			);
@@ -154,6 +184,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2817EBD41BDC579400545863 /* hangman1.gif in Resources */,
+				2817EBD51BDC579400545863 /* hangman2.gif in Resources */,
+				2817EBD61BDC579400545863 /* hangman3.gif in Resources */,
+				2817EBD71BDC579400545863 /* hangman4.gif in Resources */,
+				2817EBD81BDC579400545863 /* hangman5.gif in Resources */,
+				2817EBD91BDC579400545863 /* hangman6.gif in Resources */,
+				2817EBDA1BDC579400545863 /* hangman7.gif in Resources */,
 				3A2BBF6F1BCDDEBB00B23285 /* phrases.plist in Resources */,
 				3A2BBF641BCDDAC200B23285 /* LaunchScreen.storyboard in Resources */,
 				3A2BBF611BCDDAC200B23285 /* Assets.xcassets in Resources */,
