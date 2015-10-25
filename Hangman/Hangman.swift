@@ -42,7 +42,6 @@ class Hangman {
         if guessedLetters!.containsObject(letter) {
             return true
         }
-        guessedLetters!.addObject(letter)
         var chars = Array(answer!.characters)
         
         for (var i = 0; i < answer!.characters.count; i += 1) {
@@ -51,6 +50,9 @@ class Hangman {
                 knownString = "\((knownString! as NSString).substringToIndex(i))" + "\(letter)"
                             + "\((knownString! as NSString).substringFromIndex(i+1))"
             }
+        }
+        if (!isCorrect) {
+            guessedLetters!.addObject(letter)
         }
         return isCorrect
     }

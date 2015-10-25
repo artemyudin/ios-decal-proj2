@@ -85,15 +85,15 @@ class HangmanViewController: UIViewController {
     
     
     func showAlert(won: Bool) {
-        var title = "Sorry brah ;("
-        var mesg = "LOST"
-        if (won) {
-            title = "Congratulations!"
-            mesg = "WON"
+        var title = "Congratulations!"
+        var mesg = "Hey, you just WON the game"
+        if (!won) {
+            title = "Sorry brah, you LOST ;("
+            mesg = "The phrase was: \(api.answer!.lowercaseString)"
         }
         
         //Create the AlertController
-        let actionSheetController: UIAlertController = UIAlertController(title: title, message: "Hey, you just \(mesg) the game", preferredStyle: .Alert)
+        let actionSheetController: UIAlertController = UIAlertController(title: title, message: mesg, preferredStyle: .Alert)
         
         //Create and an option action
         let OK: UIAlertAction = UIAlertAction(title: "Ok", style: .Default) { action -> Void in
